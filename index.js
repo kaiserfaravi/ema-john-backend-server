@@ -28,7 +28,7 @@ async function run() {
             console.log(req.query);
             // error
             const cursor = productCollection.find({});
-            const page = parseInt(req.query.page);
+            const page = git(req.query.page);
             const size = parseInt(req.query.size);
             // error
             let products;
